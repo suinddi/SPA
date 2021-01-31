@@ -1,0 +1,72 @@
+body {
+    font-size: 0.95rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; /* 반응형 x */
+    background-color: #161a27;
+    font-family : 'Nanum Gothic';
+    /* background: linear-gradient(90deg, rgba(58,97,134,1) 0%, rgba(137,37,62,1) 100%); */
+}
+
+div.object-frame {
+    background-color: #1f2940;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.5rem 0.0625rem #161a27;
+    padding: 1.75rem;
+}
+
+div.object-button {
+    /*
+    <!-- 버튼 꾸미는 내용 -->
+    <!-- 색상 기본 회색 -->
+    */
+    /*background-color: #50555a;*/
+    border: 0.0625rem solid #d0d0d0;
+    border-radius: 1.25rem;
+    color: #f0f5fa;
+    cursor: pointer;
+    padding: 0.625rem 1.25rem;
+    user-select: none;
+}
+
+div.object-button:hover {
+    filter: brightness(0.9);
+}
+
+div.object-button:active {
+    filter: brightness(0.8);
+}
+
+div.object-button.red {
+    /* 빨간 버튼 : 회원 삭제 */
+    /*background-color: #50555a;*/
+    border: 0.0625rem solid #b0b0b0;
+}
+
+div.object-button.blue {
+    /* 파랑 버튼 : 회원 수정 */
+    /*background-color: #50555a;*/
+    border: 0.0625rem solid  #b0b0b0;
+}
+
+div.object-button.green {
+    /* 초록 버튼 : 회원 추가 */
+   /*background-color: #50555a;*/
+   border: 0.0625rem solid #b0b0b0;
+}
+
+div.object-page-number-button:hover {
+    filter: brightness(0.9);
+}
+
+div.object-page-number-button {
+    /*background-color: #2e2e2e;*/
+    cursor: pointer;
+    padding: 1.25rem;
+    font-size: 0.89rem;
+}
+
+div.object-page-number-button.selected {
+    cursor: default;
+    filter: brightness(0.8);
+}

@@ -1,0 +1,133 @@
+
+.modify-container-item.form-wrap {
+    border-radius: 0.35rem;
+    box-shadow: 0 0 0.25rem 0.0625rem #50505050;
+    overflow: hidden;
+    position: fixed;
+    background-color: #fff;
+    padding: 2rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modify-container-item {
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+.menu-item.modify.title > ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item.modify.title > ul > li {
+    margin-right: 2rem;
+}
+
+.menu-item.modify.title > ul > li > a {
+    color: #1f2940;
+    font-weight: 600;
+}
+
+.menu-item.modify.title > ul > li.active {
+    border-bottom: 0.18rem solid #1f2940;
+}
+
+.modify-container-item.content {
+    width: 21rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 0;
+}
+
+.modify-container-item.content > div.content-item.container {
+    width: 100%;
+    position: relative;
+}
+
+.modify-container-item .container-item{
+    position: relative;
+    margin-bottom: 1.2rem;
+}
+
+.modify-container-item .container-item:last-child {
+    margin-bottom: 3rem;
+}
+
+.modify-container-item .container-item.input > input {
+    width: calc(100% - 0.65rem);
+    border: none;
+    border-bottom: 0.0612rem solid #1f2940;
+    border-radius: 0;
+    outline: none;
+    padding: 0.65rem 0 0.75rem 0.65rem;
+    position: relative;
+    transition-duration: 200ms;
+    background-color: rgba(255, 255, 255, 0);
+    color: #1f2940;
+    font-weight: 300;
+    font-size: 0.88rem;
+}
+
+.modify-container-item .container-item.isAdmin {
+    display:flex;
+    align-items : flex-start;
+    justify-content : flex-start;
+}
+
+.modify-container-item .container-item.isAdmin > label > input {
+    position: relative;
+    top: 0.128rem;
+    margin-right: 0.3rem;
+}
+
+.modify-container-item .container-item.select > select {
+    width: 100%;
+    border: 0.062rem solid #c0c5ca;
+    box-sizing: border-box;
+    color: #00050a;
+    outline: none;
+    padding: 0.6rem 1rem;
+}
+
+.modify-container-item .container-item.input > input:focus {
+    border-bottom: 0.0625rem solid #2e323e;
+}
+
+.modify-container-item .container-item.input > input::placeholder {
+    color: #161a27;
+    font-weight: 300;
+    font-size: 0.85rem;
+}
+
+.modify-container-item .container-item.buttons.modify {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.modify-container-item .container-item.buttons > div.buttons-item.button {
+    background-color: #2e323e;
+    border-radius: 1.25rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.6rem 1.5rem;
+    transition-duration: 200ms;
+    user-select: none;
+    width: 50%;
+    margin-right: 0.75rem;
+}
+
+.modify-container-item .container-item.buttons > div.buttons-item.button:last-child {
+    margin-right: 0;
+}
+
+.container-item.buttons.modify > div.buttons-item.button:hover,
+.container-item.buttons.modify > div.buttons-item.button:active {
+    background-color: #161a27;
+    color: #fff;
+}

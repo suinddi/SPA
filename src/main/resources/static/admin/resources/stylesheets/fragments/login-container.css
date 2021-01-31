@@ -1,0 +1,180 @@
+.login-body {
+    background: url('/admin/resources/images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; /* 반응형 x */
+}
+
+.body-item.login-container {
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+.login-container-item.logo {
+    top: -220px;
+}
+
+.login-container-item.form-wrap {
+    border-radius: 0.35rem;
+    box-shadow: 0 0 0.25rem 0.0625rem #50505050;
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.21);
+    padding: 3rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-container-item {
+    padding-bottom: 4rem;
+    position: relative;
+}
+
+.menu-item.solution {
+    font-size: 1.125rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.menu-item.title {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Noto Sans KR';
+}
+
+.menu-item.title > ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item.title > ul > li {
+    margin-right: 2rem;
+}
+
+.menu-item.title > ul > li > a {
+    color: #2e323e;
+    font-weight: 700;
+}
+
+.menu-item.title > ul > li.active > a {
+    color: #fff;
+    font-weight: 500;
+}
+
+.menu-item.title > ul > li.active {
+    border-bottom: 0.18rem solid #fff;
+}
+
+.login-container-item.content {
+    width: 20rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 0;
+}
+
+.login-container-item.content > div.content-item.container {
+    width: 100%;
+    position: relative;
+}
+
+.container-item {
+    position: relative;
+}
+
+.container-item:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
+
+.container-item.input > input {
+    width: calc(100% - 1.825rem);
+    border: none;
+    border-bottom: 0.0625rem solid #fff;
+    border-radius: 0;
+    outline: none;
+    padding: 0 0 0.75rem 2rem;
+    position: relative;
+    transition-duration: 200ms;
+    background-color: rgba(255, 255, 255, 0);
+    color:#fff;
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+
+.container-item.input > input:focus {
+    border-bottom: 0.0625rem solid #2e323e;
+}
+
+.container-item.input > input::placeholder {
+    color: #D0D0D0;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.container-item.input > div.input-item.image {
+    top: calc(50% - 0.25rem);
+    left: 0;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    transform: translateY(-50%);
+    transition-duration: 200ms;
+    color: #fff;
+}
+
+.container-item.input > input:focus-within ~ div.input-item.image {
+    filter: brightness(15%);
+}
+
+.container-item.input.email > div.input-item.image {
+    background-image: url("/admin/resources/images/input-email.png");
+}
+
+.container-item.input.password > div.input-item.image {
+    background-image: url("/admin/resources/images/input-password.png");
+}
+
+.container-item.buttons {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.container-item.buttons > div.buttons-item.button {
+    background-color: #2e323e;
+    border-radius: 1.25rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.6rem 1.5rem;
+    transition-duration: 200ms;
+    user-select: none;
+}
+
+.container-item.buttons > div.buttons-item.button:hover,
+.container-item.buttons > div.buttons-item.button:active {
+    background-color: #161a27;
+    color: #fff;
+}
+
+.description {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    top: 160px;
+    color: #c0c0d0;
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: inherit;
+}

@@ -1,0 +1,221 @@
+/* main */
+body > div.body-item.main {
+    top: 0;
+    left: 15rem;
+    width: calc(100vw - 15rem);
+    min-height: 100vh;
+    align-items: flex-start;
+    background-color: #161a27;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    color: #f0f5fa;
+}
+
+body > div.body-item.main > div.main-item {
+    width: 100%;
+    position: relative;
+}
+
+body > div.body-item.main > div.main-item.top {
+    padding: 2rem 0;
+}
+
+body > div.body-item.main > div.main-item.content {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/* pane */
+body > div.body-item.pane {
+    top: 0;
+    left: 0;
+    width: 15rem;
+    height: 100vh;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #1f2940;
+    position: fixed;
+}
+
+body > div.body-item.pane > div.pane-item {
+    width: 50%;
+    position: relative;
+}
+
+body > div.body-item.pane > div.pane-item.logo {
+    padding: 2rem 0;
+}
+
+body > div.body-item.pane > div.pane-item.user {
+    padding: 5rem 0;
+}
+
+body > div.body-item.pane > div.pane-item.menu {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/* content */
+body > div.body-item.main > div.main-item.content {
+    position: relative;
+
+}
+
+body > div.body-item.main > div.main-item.content > .content-item {
+    left: 50%;
+    width: 80%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+body > div.body-item.main > div.main-item.content > .content-item:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+body > div.body-item.main > div.main-item.content > .content-item.counter-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+
+body > div.body-item.main > div.main-item.content > .content-item.counter-wrapper > div.counter-wrapper-item.counter:not(:last-child) {
+    margin-right: 1.25rem;
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.counter-wrapper > div.counter-wrapper-item.counter > div.counter-item.title {
+    color: #d0d0d0;
+    margin-bottom : 1rem;
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.counter-wrapper > div.counter-wrapper-item.counter > div.counter-item.value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #c0caca;
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.user-list {
+
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.user-list > div.user-list-item.button-wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto 1fr;
+    margin-top: 1rem;
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.user-list > div.user-list-item.button-wrapper > div.button-wrapper-item.left {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.user-list > div.user-list-item.button-wrapper > div.button-wrapper-item.center {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.user-list > div.user-list-item.button-wrapper > div.button-wrapper-item.center >
+div.object-page-number-button:first-child {
+    border-radius: 0.75rem;
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.user-list > div.user-list-item.button-wrapper > div.button-wrapper-item.center >
+div.object-page-number-button:last-child {
+    border-radius: 0.75rem;
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.user-list > div.user-list-item.button-wrapper > div.button-wrapper-item.right {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.user-list > div.user-list-item.button-wrapper > div.button-wrapper-item.right > div.object-button:not(:last-child) {
+    margin-right: 0.75rem;
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.user-list > div.user-list-item.list-wrapper {
+    padding: 0;
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.user-list > div.user-list-item.list-wrapper > div.list-wrapper-item.title {
+    border-bottom: 0.0625rem solid #2f3950;
+    color: #d0d0d0;
+    padding: 1.25rem 1.5rem;
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.user-list > div.user-list-item.list-wrapper > table.list-wrapper-item.table {
+    width: 100%;
+    border-spacing: 0;
+    color: #c0caca;
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.user-list > div.user-list-item.list-wrapper > table.list-wrapper-item.table > thead {
+    font-size: 0.88rem;
+
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.user-list > div.user-list-item.list-wrapper > table.list-wrapper-item.table > thead > tr > th {
+    background-color: #151e35;
+    padding: 0.85rem 0 0.85rem 1.5rem;
+    text-align: left;
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.user-list > div.user-list-item.list-wrapper > table.list-wrapper-item.table > tbody > tr > td {
+    border: none;
+    cursor: pointer;
+    font-size: 0.83rem;
+    padding: 0.85rem 0 0.85rem 1.5rem;
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.user-list > div.user-list-item.list-wrapper > table.list-wrapper-item.table > tbody > tr.selected > td {
+    background-color : #2f3950;
+}
+
+body > div.body-item.main > div.main-item.content > div.content-item.user-list > div.user-list-item.list-wrapper > table.list-wrapper-item.table > tbody > tr:hover > td {
+    background-color: #2f3950;
+}
+
+div.object-window.visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+div.object-window {
+    top: 50%;
+    left: 50%;
+    background-color: #f0f5fa;
+    color: #00050a;
+    position: fixed;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 0.25rem;
+    transition-duration: 250ms;
+}
+
+div.register-item.content {
+    padding: 1.75rem;
+}
+
+div.object-window > div.register-item.title {
+    padding : 0.5rem 0.75rem;
+    border-bottom: 0.0625rem solid #2f3950;
+}
+
+div.content-item container form > div.container-item.input {
+    color: #161a27;
+}
+
+
+
